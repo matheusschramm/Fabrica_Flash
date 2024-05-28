@@ -1,6 +1,15 @@
 $(document).ready(function(){
         
     var enviaForm = $('#enviar');
+    var limpaForm = $('#limpar');
+    var valoresA  = $('#valuesA');
+    var valoresB  = $('#valuesB');
+    
+    limpaForm.on('click', function(e){
+        valoresA.value = '';
+        valoresB.value = '';
+    });
+
     
     enviaForm.on('click', function(e){
         console.log("clicou");
